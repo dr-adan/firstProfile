@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="firstLine">The First P</p>
+        <button id="changeText">Change Text</button>
+        <script>
+            const button = document.querySelector('#changeText');
+            function newText(event) {
+                const p = document.querySelector('#firstLine');
+                p.innerText = 'The text has been changed';
+            }
+            button.addEventListener('click', newText);
+        </script>
+    </body>
+</html>
